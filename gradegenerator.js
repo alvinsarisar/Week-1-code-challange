@@ -34,7 +34,7 @@ function gradingSystem(marks) {
 
 // 3.Function for displaying grade to the user
 function displayGrade(marks, grade) {
-    alert(`The grade for the marks ${marks} is: ${grade}`);
+    alert('The grade for the marks ${marks} is: ${grade}');
 }
 
 // 4. main function to execute the  whole program
