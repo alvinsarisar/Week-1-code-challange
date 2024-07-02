@@ -1,11 +1,11 @@
-
+//1.function to prompt speed
 function promptForSpeed() {
     let speed;
     while (true) {
         speed = prompt("Enter the speed of the car (km/h):");
         speed = parseFloat(speed);
 
-        // Check if the input is a valid number
+        // Checking if the input is a valid speed
         if (!isNaN(speed) && speed >= 0) {
             break;
         } else {
@@ -14,7 +14,7 @@ function promptForSpeed() {
     }
     return speed;
 }
-
+//2.function to calculate the demerit points
 function getDemeritPoints(speed) {
     const speedLimit = 70;
     const kmPerDemeritPoint = 5;
@@ -34,7 +34,7 @@ function getDemeritPoints(speed) {
 }
 
 
-
+//3.function to initiate the porcess
 function speedDetector() {
     const speed = promptForSpeed();
     getDemeritPoints(speed);
