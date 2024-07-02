@@ -1,3 +1,4 @@
+//1.function to calculate overall net salary
 function calculateNetSalary() {
     const basicSalary = parseFloat(prompt("what is your basic salary:"));
     const benefits = parseFloat(prompt("please enter the benefits you receive:"));
@@ -15,7 +16,8 @@ function calculateNetSalary() {
     
 
 
-    // Calculating PAYE (Tax)
+    // Calculating PAYE 
+    const taxableIncome = grossSalary - nssfDeduction;
     const payeTax = calculatePayeTax(grossSalary - nssfDeduction);
     
 
@@ -53,9 +55,9 @@ function calculateNhifDeduction(grossSalary) {
     if (grossSalary <= 5999) {
         return 150;
     } else if (grossSalary <= 7999) {
-        return 300;
+     return 300;
     } else if (grossSalary <= 11999) {
-        return 400;
+    return 400;
     } else if (grossSalary <= 14999) {
         return 500;
     } else if (grossSalary <= 19999) {
@@ -63,15 +65,15 @@ function calculateNhifDeduction(grossSalary) {
     } else if (grossSalary <= 24999) {
         return 750;
     } else if (grossSalary <= 29999) {
-        return 850;
+    return 850;
     } else if (grossSalary <= 34999) {
         return 900;
     } else if (grossSalary <= 39999) {
-        return 950;
+     return 950;
     } else if (grossSalary <= 44999) {
-        return 1000;
+    return 1000;
     } else if (grossSalary <= 49999) {
-        return 1100;
+     return 1100;
     } else if (grossSalary <= 59999) {
         return 1200;
     } else if (grossSalary <= 69999) {
