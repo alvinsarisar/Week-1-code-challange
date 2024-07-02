@@ -32,7 +32,7 @@ function calculateNetSalary() {
     console.log(`Your NHIF Deduction is: KES ${nhifDeduction.toFixed(2)}`);
     console.log(`Your Net Salary is : KES ${netSalary.toFixed(2)}`);
 }
-//1.function for calculating PAYE tax
+//2.function for calculating PAYE tax
 function calculatePayeTax(taxableIncome) {
     let payeTax = 0;
 
@@ -50,7 +50,7 @@ function calculatePayeTax(taxableIncome) {
 
     return payeTax;
 }
-// 2.function for calculating NHIF deduction
+// 3.function for calculating NHIF deduction
 function calculateNhifDeduction(grossSalary) {
     if (grossSalary <= 5999) {
         return 150;
@@ -89,5 +89,5 @@ function calculateNhifDeduction(grossSalary) {
     }
 }
 
-// Executing main function the main function
+//4. Executing main function the main function
 calculateNetSalary();
